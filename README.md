@@ -1,5 +1,5 @@
 # Kinexis
-A set of software for visual performances that utilizes the Kinect V1 sensor to create immersive and interactive experiences.
+A collection of software for visual performances that utilizes the Kinect V1 sensor to create immersive and interactive experiences.
 
 ## 1. DepthMapper
 
