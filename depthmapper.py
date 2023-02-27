@@ -1,6 +1,12 @@
 import cv2
 import numpy as np
-import freenect
+import ctypes
+import _ctypes
+import pygame
+import sys
+
+# Import the PyKinect library
+from pykinect import KinectRuntime
 
 # Define some constants
 MAX_DEPTH = 4095  # Maximum depth value for Kinect v1
@@ -19,13 +25,16 @@ cv2.setUseOptimized(True)
 cv2.cuda.setDevice(0)
 cuda_depth_map = cv2.cuda_GpuMat(projector_height, projector_width, cv2.CV_8UC1)
 
+# Initialize the Kinect sensor
+kinect = KinectRuntime()
+
 # Loop over frames
 while True:
     # Get a new depth frame from the Kinect sensor
-    depth_frame = freenect.sync_get_depth()[0]
+    depth_frame = kinect.get_last_depth_frame()
+    depth_image = depth_frame.reshape((kinect.depth_frame_desc.Height, kinect.depth_frame_desc.Width)).astype(np.uint16)
 
     # Convert the depth frame to a grayscale image
-    depth_image = depth_frame.astype(np.uint16)  # Convert to 16-bit unsigned integer
     depth_image = np.clip(depth_image, 0, MAX_DEPTH)  # Clip the values to the range [0, MAX_DEPTH]
     depth_image = depth_image / float(MAX_DEPTH) * DEPTH_RANGE  # Normalize the depth values to the range [0, DEPTH_RANGE]
     depth_image = np.uint8(depth_image)  # Convert back to 8-bit unsigned integer
@@ -50,3 +59,4 @@ while True:
 
 # Clean up
 cv2.destroyAllWindows()
+kinect.close()
