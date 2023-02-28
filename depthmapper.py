@@ -15,7 +15,7 @@ depth_stream = dev.create_depth_stream()
 depth_stream.start()
 
 # Create the window
-cv2.namedWindow("Depth Map", cv2.WINDOW_FULLSCREEN)
+cv2.namedWindow("Depth Map", cv2.WINDOW_NORMAL)
 
 while True:
     # Get the depth map
