@@ -18,7 +18,7 @@ DepthMapper is a Python script that uses a Kinect sensor to generate a real-time
 - With `pip install -r requirements.txt`
 
 ## Usage
-- Run `depthmapper_ni.py`
+- Run `depthmapper.py`
 
 ## Please take note of
 This code is experimental and could be very unreliable.
