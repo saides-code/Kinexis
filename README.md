@@ -29,4 +29,4 @@ Other features are still under development:
 - An easy to use launcher for each script with update functionality
 
 ## License
-This project is licensed under the 
+This project is licensed under the [Mozilla Public License Version 2.0](https://github.com/saides-code/Kinexis/blob/main/LICENSE.md) If you use or modify this software, you must attribute the original creator in all copies or substantial portions of the software.
