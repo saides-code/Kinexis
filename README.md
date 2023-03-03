@@ -26,6 +26,7 @@ Other features are still under development:
 - GPU / CUDA acceleration
 - Native integration of open source drivers
 - Customizable colors, depth range and post-processing
+- An easy to use launcher for each scrpit with update functionality
 
 ## License
 This project is licensed under the 
