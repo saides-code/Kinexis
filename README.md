@@ -1,5 +1,5 @@
 # Kinexis
-Kinexis is a collection of software that utilizes the Kinect V1 sensor to create immersive and interactive visual performances. The project aims to explore the potential applications of Kinect technology in the field of art and entertainment. The current version of the collection includes a Python script called DepthMapper, which generates real-time grayscale depth maps using the Kinect sensor. The script is based on the OpenNI 2 SDK and can be used for experimentation purposes.
+Kinexis is an ever-expanding collection of software that utilizes the Kinect V1 sensor to create immersive and interactive visual performances. The project aims to explore the potential applications of Kinect technology in the field of art and entertainment. The current version of the collection includes a Python script called DepthMapper, which generates real-time grayscale depth maps using the Kinect sensor. The script is based on the OpenNI 2 SDK and can be used for experimentation purposes.
 
 ### Before you proceed
 As a programming novice, I must advise that the codes in this collection are highly experimental and may not be reliable. It is recommended that these codes be used solely for experimentation purposes, and I do not advise their use in a production environment. Please note that these codes are distributed without any warranty, and their use is entirely at your own risk.
@@ -29,4 +29,4 @@ Other features are still under development:
 - An easy to use launcher for each script with update functionality
 
 ## License
-This project is licensed under the [Mozilla Public License Version 2.0](https://github.com/saides-code/Kinexis/blob/main/LICENSE.md) If you use or modify this software, you must attribute the original creator in all copies or substantial portions of the software.
+This project is licensed under the [Mozilla Public License Version 2.0](https://github.com/saides-code/Kinexis/blob/main/LICENSE.md). If you use or modify this software, you must attribute the original creator in all copies or substantial portions of the software.
