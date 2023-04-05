@@ -27,7 +27,7 @@ Other features are still under development:
 
 ## 2. DepthCap
 
-DepthCap is a Python script based on DepthMapper. The script opens the depth and color streams from the Kinect sensor and displays a preview with a color mapped depth overlayed on top of the color stream. The user can adjust the minimum and maximum depth values to display using trackbars. The script also allows the user to save the depth channel and color channel as TIFF files. The TIFF files are sized at 1280x960 pixels.
+DepthCap is a Python script based on DepthMapper. The script opens the depth and color streams from the Kinect sensor and displays a preview with a color mapped depth overlayed on top of the color stream. The user can adjust the minimum and maximum depth values to display using trackbars. The script also allows the user to save the depth channel and color channel as TIFF files that are sized at 1280x960 pixels.
 
 ## Get started
 
